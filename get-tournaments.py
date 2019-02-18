@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
-import web
+
+print("Job starting")
 
 class Tournament:
     def __init__(self, id, description, location, date):
@@ -24,4 +25,5 @@ for t in tournamentRows:
     tournament = Tournament(id, description, location, date)
     tournaments.append(tournament)
 
-print(tournamentRows)
+print(tournaments)
+print("Job ending")
